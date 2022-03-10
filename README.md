@@ -1,3 +1,29 @@
-
-# CI Rusakov 
-[![Build status](https://ci.appveyor.com/api/projects/status/shgpba4lsgrsgf7d?svg=true)](https://ci.appveyor.com/project/AndryRusff/aqa-1-2)
+## `Статус сборки` [![Build status](https://ci.appveyor.com/api/projects/status/shgpba4lsgrsgf7d?svg=true)](https://ci.appveyor.com/project/AndryRusff/aqa-1-2)
+# Тестирование API, CI
+## Домашнее задание по курсу "Автоматизированное тестирование"
+## Тема: «1.2. Тестирование API, CI», задание №1: «Настройка CI», задание №2: «JSON Schema»
+- Применены инструменты:
+	1. Задание №1 - CI AppVeyor
+	1. Задание №2:
+		- Rest Assured;
+		- Json Schema Validator.
+- Что сделано:
+	1. Задание №1 - настроен и подкючен CI AppVeyor, произведена проверка корректной работы (сделан коммит, содержащий ошибку).
+	1. Задание №2:
+		- Существующий тест модифицирован, чтобы он проверял соответствие схеме JSON;
+		- Исправлена схема (найден способ валидации значения поля на два из возможных значения: "RUB" или "USD").
+### Предварительные требования
+- На компьютере пользователя должна быть установлена Intellij IDEA
+### Установка и запуск
+1. Склонировать проект на свой компьютер
+	- открыть терминал
+	- ввести команду 
+		```
+		git clone https://github.com/AndryRusff/AQA-1-2/
+		```
+1. Открыть склонированный проект в Intellij IDEA
+1. В Intellij IDEA перейти во вкладку Terminal (Alt+F12) и запустить приложение командой
+	```
+	java -jar artifacts/app-mbank.jar
+	```
+1. Запустить авто-тесты В Intellij IDEA в новой вкладке Terminal командой ./gradlew clean test
